@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Hooks完全ガイド - HTMLテンプレート01</title>
+    <meta
+      name="description"
+      content="React Hooksの基本的な使い方から応用まで、実践的な例を交えて詳しく解説します。useState、useEffect、カスタムフックの作成方法など。"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header-content">
+        <h1 class="site-title">HTMLテンプレート01</h1>
+        <nav
+          class="main-nav"
+          role="navigation"
+          aria-label="メインナビゲーション"
+        >
+          <ul>
+            <li><a href="../../index.html">ホーム</a></li>
+            <li><a href="../../articles.html">記事一覧</a></li>
+            <li><a href="../../profile.html">プロフィール</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content" role="main">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol>
+          <li><a href="../../index.html">ホーム</a></li>
+          <li><a href="../../articles.html">記事一覧</a></li>
+          <li><a href="../programming/index.html">プログラミング</a></li>
+          <li aria-current="page">React Hooks完全ガイド</li>
+        </ol>
+      </nav>
+
+      <article class="article">
+        <header class="article-header">
+          <h2 class="article-title">React Hooks完全ガイド</h2>
+          <div class="article-meta">
+            <span class="author">著者名</span>
+            <time datetime="2024-03-20">2024年3月20日</time>
+          </div>
+        </header>
+
+        <div class="article-thumbnail">
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop"
+            alt="プログラミングの記事サムネイル"
+          />
+        </div>
+
+        <div class="article-content">
+          <h3>1. useState - 状態管理の基本</h3>
+          <p>
+            useStateは、Reactコンポーネントで状態を管理するための最も基本的なHookです。カウンターやフォームの入力値など、コンポーネント内で変化する値を扱う際に使用します。
+          </p>
+
+          <h3>2. useEffect - 副作用の処理</h3>
+          <p>
+            useEffectは、コンポーネントのレンダリング後に実行される副作用を扱うためのHookです。データフェッチ、DOMの操作、イベントリスナーの設定など、様々な用途で活用できます。
+          </p>
+
+          <h3>3. useContext - コンテキストの利用</h3>
+          <p>
+            useContextを使用することで、コンポーネントツリーを介してデータを共有することができます。テーマの切り替えやユーザー情報の共有など、グローバルな状態管理に適しています。
+          </p>
+
+          <h3>4. useReducer - 複雑な状態管理</h3>
+          <p>
+            useReducerは、より複雑な状態管理が必要な場合に使用するHookです。Reduxのような状態管理パターンを実装する際に便利で、状態の更新ロジックを集約することができます。
+          </p>
+
+          <h3>5. カスタムフックの作成</h3>
+          <p>
+            複数のHookを組み合わせて、再利用可能なカスタムフックを作成することができます。これにより、ロジックの再利用性が高まり、コードの保守性が向上します。
+          </p>
+
+          <h3>まとめ</h3>
+          <p>
+            React
+            Hooksは、関数コンポーネントで状態管理やライフサイクルを扱うための強力な機能です。適切に使用することで、より簡潔で保守性の高いコードを書くことができます。本記事で紹介した基本的なHookを理解し、実践的な場面で活用していきましょう。
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-content">
+        <p>&copy; 2024 HTMLテンプレート01</p>
+      </div>
+    </footer>
+  </body>
+</html>

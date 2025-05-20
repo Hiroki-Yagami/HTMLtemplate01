@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>プログラミング - 記事一覧 - HTMLテンプレート01</title>
+    <meta name="description" content="プログラミングに関する記事一覧です。" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header-content">
+        <h1 class="site-title">HTMLテンプレート01</h1>
+        <nav
+          class="main-nav"
+          role="navigation"
+          aria-label="メインナビゲーション"
+        >
+          <ul>
+            <li><a href="../../index.html">ホーム</a></li>
+            <li><a href="../../articles.html">記事一覧</a></li>
+            <li><a href="../../profile.html">プロフィール</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content" role="main">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol>
+          <li><a href="../../index.html">ホーム</a></li>
+          <li><a href="../../articles.html">記事一覧</a></li>
+          <li aria-current="page">プログラミング</li>
+        </ol>
+      </nav>
+      <h2 class="section-title">プログラミング - 記事一覧</h2>
+      <div class="article-cards">
+        <article class="article-card">
+          <h3 class="article-title">React Hooks完全ガイド</h3>
+          <div class="article-meta">
+            <time datetime="2024-03-20">2024年3月20日</time>
+          </div>
+          <p>
+            React
+            Hooksの基本的な使い方から応用まで、実践的な例を交えて詳しく解説します。useState、useEffect、カスタムフックの作成方法など。
+          </p>
+          <a href="react-hooks-guide.html" class="read-more">続きを読む</a>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-content">
+        <p>&copy; 2024 note風テンプレート</p>
+      </div>
+    </footer>
+  </body>
+</html>

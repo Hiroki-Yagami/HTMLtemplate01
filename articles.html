@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="note風テンプレートの記事一覧。Webデザイン、プログラミング、テクノロジーに関する記事を掲載しています。"
+    />
+    <meta
+      name="keywords"
+      content="記事一覧, ブログ, Webデザイン, プログラミング, テクノロジー"
+    />
+    <meta name="author" content="著者名" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="記事一覧 - note風テンプレート" />
+    <meta
+      property="og:description"
+      content="note風テンプレートの記事一覧。Webデザイン、プログラミング、テクノロジーに関する記事を掲載しています。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/articles.html" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&h=630&fit=crop"
+    />
+    <meta property="og:site_name" content="note風テンプレート" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="記事一覧 - note風テンプレート" />
+    <meta
+      name="twitter:description"
+      content="note風テンプレートの記事一覧。Webデザイン、プログラミング、テクノロジーに関する記事を掲載しています。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&h=630&fit=crop"
+    />
+    <link rel="canonical" href="https://example.com/articles.html" />
+    <title>記事一覧 - HTMLテンプレート01</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "note風テンプレート - 記事一覧",
+        "description": "note風テンプレートの記事一覧。Webデザイン、プログラミング、テクノロジーに関する記事を掲載しています。",
+        "url": "https://example.com/articles.html",
+        "author": {
+          "@type": "Person",
+          "name": "著者名",
+          "url": "https://example.com/profile.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "note風テンプレート",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&h=630&fit=crop"
+          }
+        },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "モダンなWebデザインのトレンド2024",
+            "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=400&fit=crop",
+            "datePublished": "2024-03-21",
+            "dateModified": "2024-03-21",
+            "author": {
+              "@type": "Person",
+              "name": "著者名"
+            },
+            "keywords": "Webデザイン, トレンド",
+            "url": "https://example.com/articles/web-design-trends-2024"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "React Hooks完全ガイド",
+            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop",
+            "datePublished": "2024-03-20",
+            "dateModified": "2024-03-20",
+            "author": {
+              "@type": "Person",
+              "name": "著者名"
+            },
+            "keywords": "React, JavaScript",
+            "url": "https://example.com/articles/react-hooks-guide"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "AIとWeb開発の未来",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=400&fit=crop",
+            "datePublished": "2024-03-19",
+            "dateModified": "2024-03-19",
+            "author": {
+              "@type": "Person",
+              "name": "著者名"
+            },
+            "keywords": "AI, テクノロジー",
+            "url": "https://example.com/articles/ai-web-development-future"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header-content">
+        <h1 class="site-title">HTMLテンプレート01</h1>
+        <nav
+          class="main-nav"
+          role="navigation"
+          aria-label="メインナビゲーション"
+        >
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="articles.html" aria-current="page">記事一覧</a></li>
+            <li><a href="profile.html">プロフィール</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content" role="main">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol>
+          <li><a href="/">ホーム</a></li>
+          <li aria-current="page">記事一覧</li>
+        </ol>
+      </nav>
+
+      <div class="articles-header">
+        <h2 class="articles-title">記事一覧</h2>
+        <div class="articles-filter">
+          <a
+            href="/articles"
+            class="filter-button active"
+            data-category="all"
+            aria-current="page"
+            >すべて</a
+          >
+          <a href="/articles/web" class="filter-button" data-category="web"
+            >Webデザイン</a
+          >
+          <a
+            href="/articles/programming"
+            class="filter-button"
+            data-category="programming"
+            >プログラミング</a
+          >
+          <a href="/articles/tech" class="filter-button" data-category="tech"
+            >テクノロジー</a
+          >
+        </div>
+      </div>
+
+      <div class="articles-grid">
+        <article class="article-card" data-category="web">
+          <a href="#" class="article-link">
+            <div class="article-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=400&fit=crop"
+                alt="Webデザインの記事サムネイル"
+              />
+            </div>
+            <div class="article-content">
+              <h3 class="article-title">モダンなWebデザインのトレンド2024</h3>
+              <p class="article-excerpt">
+                2024年のWebデザイントレンドを解説。ミニマリズム、3D要素、インタラクティブなアニメーションなど、最新のデザイン動向を紹介します。
+              </p>
+              <div class="article-meta">
+                <time datetime="2024-03-21">2024年3月21日</time>
+              </div>
+            </div>
+          </a>
+          <a href="articles/web/web-design-trends-2024.html" class="read-more"
+            >続きを読む</a
+          >
+        </article>
+
+        <article class="article-card" data-category="programming">
+          <a href="#" class="article-link">
+            <div class="article-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop"
+                alt="プログラミングの記事サムネイル"
+              />
+            </div>
+            <div class="article-content">
+              <h3 class="article-title">React Hooks完全ガイド</h3>
+              <p class="article-excerpt">
+                React
+                Hooksの基本的な使い方から応用まで、実践的な例を交えて詳しく解説します。useState、useEffect、カスタムフックの作成方法など。
+              </p>
+              <div class="article-meta">
+                <time datetime="2024-03-20">2024年3月20日</time>
+              </div>
+            </div>
+          </a>
+          <a
+            href="articles/programming/react-hooks-guide.html"
+            class="read-more"
+            >続きを読む</a
+          >
+        </article>
+
+        <article class="article-card" data-category="tech">
+          <a href="#" class="article-link">
+            <div class="article-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=400&fit=crop"
+                alt="テクノロジーの記事サムネイル"
+              />
+            </div>
+            <div class="article-content">
+              <h3 class="article-title">AIとWeb開発の未来</h3>
+              <p class="article-excerpt">
+                人工知能がWeb開発に与える影響と、今後期待される技術革新について考察します。AIを活用した開発ツールや自動化の可能性。
+              </p>
+              <div class="article-meta">
+                <time datetime="2024-03-19">2024年3月19日</time>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <nav class="pagination" role="navigation" aria-label="ページネーション">
+        <ul>
+          <li><a href="#" class="active">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><span>...</span></li>
+          <li><a href="#">10</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-content">
+        <p>&copy; 2024 HTMLテンプレート01</p>
+      </div>
+    </footer>
+  </body>
+</html>

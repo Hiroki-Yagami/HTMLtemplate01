@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>テクノロジー - 記事一覧 - HTMLテンプレート01</title>
+    <meta name="description" content="テクノロジーに関する記事一覧です。" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header-content">
+        <h1 class="site-title">HTMLテンプレート01</h1>
+        <nav
+          class="main-nav"
+          role="navigation"
+          aria-label="メインナビゲーション"
+        >
+          <ul>
+            <li><a href="../../index.html">ホーム</a></li>
+            <li><a href="../../articles.html">記事一覧</a></li>
+            <li><a href="../../profile.html">プロフィール</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content" role="main">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol>
+          <li><a href="../../index.html">ホーム</a></li>
+          <li><a href="../../articles.html">記事一覧</a></li>
+          <li aria-current="page">テクノロジー</li>
+        </ol>
+      </nav>
+      <h2 class="section-title">テクノロジー - 記事一覧</h2>
+      <div class="article-cards">
+        <article class="article-card">
+          <h3 class="article-title">AIとWeb開発の未来</h3>
+          <div class="article-meta">
+            <time datetime="2024-03-19">2024年3月19日</time>
+          </div>
+          <p>
+            人工知能がWeb開発に与える影響と、今後期待される技術革新について考察します。AIを活用した開発ツールや自動化の可能性。
+          </p>
+          <a href="ai-web-development-future.html" class="read-more"
+            >続きを読む</a
+          >
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-content">
+        <p>&copy; 2024 note風テンプレート</p>
+      </div>
+    </footer>
+  </body>
+</html>

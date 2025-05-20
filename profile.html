@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="著者のプロフィールページ。Webデザイナー/フロントエンドエンジニアとしての経歴、スキル、最近の記事を紹介しています。"
+    />
+    <meta
+      name="keywords"
+      content="Webデザイナー, フロントエンドエンジニア, ポートフォリオ, プロフィール"
+    />
+    <meta name="author" content="著者名" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="プロフィール - note風テンプレート" />
+    <meta
+      property="og:description"
+      content="著者のプロフィールページ。Webデザイナー/フロントエンドエンジニアとしての経歴、スキル、最近の記事を紹介しています。"
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://example.com/profile.html" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=faces"
+    />
+    <meta property="og:site_name" content="note風テンプレート" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="プロフィール - note風テンプレート" />
+    <meta
+      name="twitter:description"
+      content="著者のプロフィールページ。Webデザイナー/フロントエンドエンジニアとしての経歴、スキル、最近の記事を紹介しています。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=faces"
+    />
+    <link rel="canonical" href="https://example.com/profile.html" />
+    <title>プロフィール - HTMLテンプレート01</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "著者名",
+        "jobTitle": "Webデザイナー / フロントエンドエンジニア",
+        "url": "https://example.com/profile.html",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=faces",
+        "sameAs": [
+          "https://twitter.com/username",
+          "https://github.com/username",
+          "https://example.com/portfolio"
+        ],
+        "knowsAbout": ["HTML / CSS", "JavaScript", "React", "UI/UXデザイン"],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "note風テンプレート"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header-content">
+        <h1 class="site-title">HTMLテンプレート01</h1>
+        <nav
+          class="main-nav"
+          role="navigation"
+          aria-label="メインナビゲーション"
+        >
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="articles.html">記事一覧</a></li>
+            <li><a href="profile.html" aria-current="page">プロフィール</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content" role="main">
+      <article class="article profile">
+        <header class="article-header">
+          <h2 class="article-title">プロフィール</h2>
+        </header>
+
+        <section class="article-content">
+          <div class="profile-header">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=faces"
+              alt="プロフィール画像"
+              class="profile-image"
+            />
+            <div class="profile-info">
+              <h3>著者名</h3>
+              <p class="profile-bio">
+                Webデザイナー / フロントエンドエンジニア
+              </p>
+              <div class="profile-social">
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">ポートフォリオ</a>
+              </div>
+            </div>
+          </div>
+
+          <section class="profile-section">
+            <h3>自己紹介</h3>
+            <p>
+              ここに自己紹介文を入れます。経歴や興味のある分野、得意な技術などについて書くことができます。
+              読者の方々に伝えたいことを自由に記述してください。
+            </p>
+          </section>
+
+          <section class="profile-section">
+            <h3>スキル</h3>
+            <ul class="skill-list">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>UI/UXデザイン</li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-content">
+        <p>&copy; 2024 HTMLテンプレート01</p>
+      </div>
+    </footer>
+  </body>
+</html>
